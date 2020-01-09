@@ -10,7 +10,8 @@ using namespace std;
 int main() {
 
 	int number_list[100];
-	int r;
+	int r, steps;
+	int largest = 0;
 	srand(time(NULL));
 
 	for (int i = 0; i < 100; i++) {
@@ -18,9 +19,14 @@ int main() {
 		number_list[i] = r;
 	}
 
-	for (int i = 0; i < )
+	for (int i = 0; i < size(number_list); i++) {
+		if (number_list[i] > largest) {
+			largest = number_list[i];
+		}
+		steps++;
+	}
 
-
+	cout << largest << endl;
 
 	return 0;
 }
